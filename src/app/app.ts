@@ -1,12 +1,32 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { Slide } from './slide/slide';
+import { Card } from './card/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgClass, JsonPipe } from '@angular/common';
+import { Footer } from './footer/footer';
+import { CartService } from './service/cart-service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ReactiveFormsModule, Footer,RouterLink, ],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected title = 'lap5';
+  
+  // ngOnInit(): void {
+  //   let card: any = localStorage.getItem('card_item') ?? '[]';
+  //   this.card_item = JSON.parse(card);
+  // }
+    // card_item: any[] = [];
+  
+
+    constructor(public cartService: CartService){
+       
+    }
+
+
+
 }
+
