@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card-container {
+    padding: 4rem 0;
+}
+
+.fashion-card {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo-img {
+    max-height: 25px;
+    object-fit: contain;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.brand-logo-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.brand-logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8f9fa;
+}
+
+.brand-logo-container img {
+    max-height: 200px;
+    /* Increased max height */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Added transition for box-shadow */
+
+}
+
+.brand-logo-container img:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Slightly increased shadow on hover */
+}

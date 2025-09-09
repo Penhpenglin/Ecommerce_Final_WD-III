@@ -1,0 +1,86 @@
+.contact-container {
+            background: #fff;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 800px;
+            /* Added box-shadow for depth */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* Added transition for smooth effects */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for the main container */
+        .contact-container:hover {
+            transform: translateY(-5px); /* Lifts the card */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+        }
+
+        .contact-container h2 {
+            font-weight: 800;
+            color: #45aeff;
+            margin-bottom: 30px;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .form-control {
+            border-radius: 6px;
+            border: 1px solid #ced4da;
+            padding: 10px 15px;
+            /* Added subtle inset shadow to inputs */
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+            /* Updated transition to include transform */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        
+        .form-control:focus {
+          border-color: #80bdff;
+          /* Added a subtle scale transform on focus */
+          transform: scale(1.01);
+          box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn-custom {
+            background-color: #36b5ff;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 10px 30px;
+            border-radius: 5px;
+            /* Added box-shadow to the button */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for the send button */
+        .btn-custom:hover {
+            background-color: #004690;
+            transform: translateY(-2px); /* Lifts the button */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+        }
+
+        .map-container {
+            margin: 30px 0;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+            /* Added box-shadow for the map container */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for the map container */
+        .map-container:hover {
+            transform: scale(1.01); /* Slightly enlarges the map */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
