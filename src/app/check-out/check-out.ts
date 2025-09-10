@@ -25,7 +25,7 @@ export class CheckOut {
   Swal.fire({
     title: 'Thanks You',
     text: 'Your payment was successful!',
-    imageUrl: '/image/emoji.jpg', // <-- your image here
+    imageUrl: '/image/Kilua.jpg', // <-- your image here
     imageWidth: 250,
     imageHeight: 250,
     imageAlt: 'Success',
