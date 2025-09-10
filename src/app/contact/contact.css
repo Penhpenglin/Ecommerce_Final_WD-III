@@ -1,86 +1,120 @@
+/* 🌟 Contact Container */
 .contact-container {
-            background: #fff;
-            margin: 60px auto;
-            padding: 40px;
-            border-radius: 10px;
-            max-width: 800px;
-            /* Added box-shadow for depth */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            /* Added transition for smooth effects */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
 
-        /* Hover effect for the main container */
-        .contact-container:hover {
-            transform: translateY(-5px); /* Lifts the card */
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
-        }
+/* ✨ Title Animation */
+.contact-container h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: rgb(69, 174, 255);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: slideDown 1s ease-in-out;
+}
 
-        .contact-container h2 {
-            font-weight: 800;
-            color: #45aeff;
-            margin-bottom: 30px;
-        }
+.contact-container h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: rgb(69, 174, 255);
+  margin: 10px auto 0;
+  border-radius: 2px;
+  animation: growLine 1s ease-in-out;
+}
 
-        .form-label {
-            font-weight: 500;
-        }
+/* 📝 Form Inputs */
+.contact-container .form-control {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
 
-        .form-control {
-            border-radius: 6px;
-            border: 1px solid #ced4da;
-            padding: 10px 15px;
-            /* Added subtle inset shadow to inputs */
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-            /* Updated transition to include transform */
-            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        
-        .form-control:focus {
-          border-color: #80bdff;
-          /* Added a subtle scale transform on focus */
-          transform: scale(1.01);
-          box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
-        }
+.contact-container .form-control:focus {
+  border-color: rgb(69, 174, 255);
+  box-shadow: 0 0 10px rgba(69, 174, 255, 0.3);
+  transform: scale(1.02);
+}
 
-        .btn-custom {
-            background-color: #36b5ff;
-            color: #fff;
-            border: none;
-            font-size: 16px;
-            font-weight: 700;
-            padding: 10px 30px;
-            border-radius: 5px;
-            /* Added box-shadow to the button */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-        }
+/* 🚀 Button Style */
+.btn-custom {
+  background: rgb(69, 174, 255);
+  color: white;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
 
-        /* Hover effect for the send button */
-        .btn-custom:hover {
-            background-color: #004690;
-            transform: translateY(-2px); /* Lifts the button */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
-        }
+.btn-custom:hover {
+  background: rgb(40, 140, 220);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(69, 174, 255, 0.4);
+}
 
-        .map-container {
-            margin: 30px 0;
-            border: 2px solid #e9ecef;
-            border-radius: 8px;
-            overflow: hidden;
-            /* Added box-shadow for the map container */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+/* 🌍 Map Animation */
+.embed-responsive {
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 25px;
+  animation: fadeIn 1.2s ease-in-out;
+}
 
-        /* Hover effect for the map container */
-        .map-container:hover {
-            transform: scale(1.01); /* Slightly enlarges the map */
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
-        }
+iframe {
+  transition: transform 0.5s ease-in-out;
+}
 
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: 0;
-        }
+iframe:hover {
+  transform: scale(1.02);
+}
+
+/* 🔑 Animations Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

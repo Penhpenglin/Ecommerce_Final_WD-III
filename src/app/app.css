@@ -1,81 +1,60 @@
-/* Make navbar background blue */
+/* Navbar animation on page load */
 .navbar {
-  background-color: #71d4ff !important;
-  /* Bootstrap primary blue */
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 0.8s ease forwards;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Make navbar brand and links white */
-.navbar-brand,
+/* Keyframes for slide down */
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Brand hover effect */
+.navbar-brand {
+  transition: color 0.3s ease, transform 0.3s ease;
+  color:rgb(0, 162, 255)efd;
+}
+
+.navbar-brand:hover {
+  color: #0d6efd;
+  transform: scale(1.1);
+}
+
+/* Nav links underline animation */
 .nav-link {
-  color: #fff !important;
-  font-weight: 700;
-}
-.navbar-brand{
-  font-size: 2rem;
-}
-.nav-link{
-  margin-left: 30px;
-  font-size: 20px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Hover effect for nav links */
-.nav-link:hover {
-  color: #01116b !important;
-
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #0d6efd;
+  transition: width 0.3s ease;
 }
 
-
-.btn-outline-success {
-  white-space: nowrap;
-  /* Prevent text wrapping */
-  display: inline-flex;
-  align-items: center;
-  /* Vertically center text */
-  padding: 0.6rem 1.25rem;
-  /* Comfortable padding */
-  font-weight: 600;
-}
-.form-control{
-  border-radius: 20px;
-}
-.btn 
-{
-  background-color: rgb(255, 255, 255);
-
+.nav-link:hover::after {
+  width: 100%;
 }
 
-/* Cart Button Style */
-.btn-outline-success {
-  white-space: nowrap; /* Prevent line breaks */
-  display: inline-flex;
-  align-items: center;
-  padding: 0.6rem 1.25rem;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 50px; /* Rounded button */
-  background-color: #ffffff;
-  color: #00709c; /* Bootstrap green */
-  transition: all 0.3s ease-in-out;
-  box-shadow: none; /* Remove outside glow */
+/* Smooth fade-in for search + cart */
+.d-flex {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.5s;
 }
 
-/* Hover effect */
-.btn-outline-success:hover {
-  background-color: #003549;
-  color: #ffffff;
-  transform: translateY(-2px); /* Lift up on hover */
-}
-
-/* Click (Active) effect */
-.btn-outline-success:active {
-  background-color: #003549;
-  color: #ffffff;
-  transform: translateY(0);
-  box-shadow: none; 
-}
-
-
-.btn-outline-success:focus {
-  box-shadow: none;
-  outline: none;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

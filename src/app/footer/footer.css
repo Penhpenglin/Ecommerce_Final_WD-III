@@ -1,18 +1,109 @@
+/* === Footer Container === */
 .ecom-footer {
-  background-color: #343a40;
+  background-color: #0d1b2a; /* Dark-blue modern look */
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
+/* Footer Headings */
+.ecom-footer h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeUp 1s ease forwards;
+}
+
+.ecom-footer h5::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ff6f61; /* Accent color */
+  margin-top: 6px;
+  border-radius: 2px;
+  animation: growLine 1s ease forwards;
+}
+
+/* Footer Links */
 .footer-link {
+  color: #cfd8dc;
   text-decoration: none;
-  color: #ffffff;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-link:hover {
-  color: #ffc107;
-  transform: translateX(4px);
+  color: #ff6f61;
+  transform: translateX(5px);
 }
 
+/* Footer Paragraphs */
+.ecom-footer p {
+  color: #cfd8dc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Footer Icons */
 .ecom-footer i {
-  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.ecom-footer .footer-link i:hover {
+  color: #ff6f61;
+  transform: scale(1.2);
+}
+
+/* Horizontal Line */
+.ecom-footer hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Bottom Row */
+.ecom-footer .row p {
+  font-size: 0.85rem;
+  color: #8898aa;
+}
+
+.ecom-footer .text-center.text-md-right a {
+  margin-left: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ecom-footer .text-md-left,
+  .ecom-footer .text-md-right {
+    text-align: center !important;
+  }
+  .ecom-footer h5::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* === Animations === */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40px;
+  }
 }

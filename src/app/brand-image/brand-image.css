@@ -63,7 +63,8 @@ body {
 }
 
 .brand-logo-container img {
-    max-height: 200px;
+    width:250px;
+    height: 150px;
     /* Increased max height */
     filter: grayscale(100%);
     transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;

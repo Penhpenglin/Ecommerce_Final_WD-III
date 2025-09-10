@@ -1,0 +1,61 @@
+/* === Product Card Grid for 4 Columns === */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+app-card {
+  flex: 0 0 23%; /* ~4 cards per row with some gap */
+  animation: fadeInUp 1s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Internal card styling */
+app-card .card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+app-card .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* === Animations === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 1200px) {
+  app-card {
+    flex: 0 0 31%; /* 3 per row */
+  }
+}
+
+@media (max-width: 768px) {
+  app-card {
+    flex: 0 0 48%; /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  app-card {
+    flex: 0 0 100%; /* 1 per row */
+  }
+}
