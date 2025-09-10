@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/custom-pipes/tokhr-pipe.spec.ts"],
+  "sourcesContent": ["import { TokhrPipe } from './tokhr-pipe';\r\n\r\ndescribe('TokhrPipe', () => {\r\n  it('create an instance', () => {\r\n    const pipe = new TokhrPipe();\r\n    expect(pipe).toBeTruthy();\r\n  });\r\n});\r\n"],
+  "mappings": ";;;;;;;;AAAA;AAEA,SAAS,aAAa,MAAK;AACzB,KAAG,sBAAsB,MAAK;AAC5B,UAAM,OAAO,IAAI,UAAS;AAC1B,WAAO,IAAI,EAAE,WAAU;EACzB,CAAC;AACH,CAAC;",
+  "names": []
+}

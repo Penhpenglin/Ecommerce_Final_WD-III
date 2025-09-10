@@ -1,0 +1,78 @@
+import {
+  TestBed,
+  init_testing
+} from "./chunk-N5UVEJXM.js";
+import {
+  Component,
+  __decorate,
+  init_core,
+  init_tslib_es6
+} from "./chunk-MMRMA2V2.js";
+import {
+  __async,
+  __commonJS,
+  __esm
+} from "./chunk-TTULUY32.js";
+
+// angular:jit:template:src\app\contact\contact.html
+var contact_default;
+var init_contact = __esm({
+  "angular:jit:template:src\\app\\contact\\contact.html"() {
+    contact_default = '<div class="container contact-container">\r\n  <h2 class="text-center mb-4" style="font-weight: 800; color: rgb(0, 166, 255);">Contact Us</h2>\r\n  <form>\r\n    <div class="mb-3">\r\n      <label for="name" class="form-label">Full Name</label>\r\n      <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>\r\n    </div>\r\n\r\n    <div class="mb-3">\r\n      <label for="email" class="form-label">Email address</label>\r\n      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>\r\n    </div>\r\n    \r\n    <div class="mb-3">\r\n      <label for="subject" class="form-label">Subject</label>\r\n      <input type="text" class="form-control" id="subject" placeholder="Subject" required>\r\n    </div>\r\n\r\n    <div class="mb-3">\r\n      <label for="message" class="form-label">Message</label>\r\n      <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>\r\n    </div>\r\n\r\n    <div class="text-center">\r\n      <button type="submit" class="btn btn-custom px-5">Send</button>\r\n    </div>\r\n  </form>\r\n\r\n  <!-- \u{1F30D} Embedded Google Map -->\r\n    <div class="mb-4">\r\n      <label class="form-label d-block">Our Location</label>\r\n      <div class="embed-responsive embed-responsive-16by9">\r\n        <iframe\r\n          class="embed-responsive-item"\r\n          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.659289936058!2d106.67998331524118!3d10.762622992330402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3b7e8da5a7%3A0x1f5f904f5e26da3d!2sBen%20Thanh%20Market!5e0!3m2!1sen!2s!4v1600000000000"\r\n          width="100%"\r\n          height="300"\r\n          frameborder="0"\r\n          style="border:0;"\r\n          allowfullscreen=""\r\n          aria-hidden="false"\r\n          tabindex="0">\r\n        </iframe>\r\n      </div>\r\n    </div>\r\n</div>\r\n';
+  }
+});
+
+// angular:jit:style:src\app\contact\contact.css
+var contact_default2;
+var init_contact2 = __esm({
+  "angular:jit:style:src\\app\\contact\\contact.css"() {
+    contact_default2 = "/* src/app/contact/contact.css */\n.contact-container {\n  background: #fff;\n  margin: 60px auto;\n  padding: 40px;\n  border-radius: 10px;\n  max-width: 800px;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n.contact-container:hover {\n  transform: translateY(-5px);\n  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);\n}\n.contact-container h2 {\n  font-weight: 800;\n  color: #45aeff;\n  margin-bottom: 30px;\n}\n.form-label {\n  font-weight: 500;\n}\n.form-control {\n  border-radius: 6px;\n  border: 1px solid #ced4da;\n  padding: 10px 15px;\n  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);\n  transition:\n    border-color 0.3s ease,\n    box-shadow 0.3s ease,\n    transform 0.3s ease;\n}\n.form-control:focus {\n  border-color: #80bdff;\n  transform: scale(1.01);\n  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);\n}\n.btn-custom {\n  background-color: #36b5ff;\n  color: #fff;\n  border: none;\n  font-size: 16px;\n  font-weight: 700;\n  padding: 10px 30px;\n  border-radius: 5px;\n  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);\n  transition:\n    background-color 0.3s ease,\n    transform 0.3s ease,\n    box-shadow 0.3s ease;\n}\n.btn-custom:hover {\n  background-color: #004690;\n  transform: translateY(-2px);\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);\n}\n.map-container {\n  margin: 30px 0;\n  border: 2px solid #e9ecef;\n  border-radius: 8px;\n  overflow: hidden;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n.map-container:hover {\n  transform: scale(1.01);\n  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);\n}\niframe {\n  width: 100%;\n  height: 300px;\n  border: 0;\n}\n/*# sourceMappingURL=contact.css.map */\n";
+  }
+});
+
+// src/app/contact/contact.ts
+var Contact;
+var init_contact3 = __esm({
+  "src/app/contact/contact.ts"() {
+    "use strict";
+    init_tslib_es6();
+    init_contact();
+    init_contact2();
+    init_core();
+    Contact = class Contact2 {
+    };
+    Contact = __decorate([
+      Component({
+        selector: "app-contact",
+        imports: [],
+        template: contact_default,
+        styles: [contact_default2]
+      })
+    ], Contact);
+  }
+});
+
+// src/app/contact/contact.spec.ts
+var require_contact_spec = __commonJS({
+  "src/app/contact/contact.spec.ts"(exports) {
+    init_testing();
+    init_contact3();
+    describe("Contact", () => {
+      let component;
+      let fixture;
+      beforeEach(() => __async(null, null, function* () {
+        yield TestBed.configureTestingModule({
+          imports: [Contact]
+        }).compileComponents();
+        fixture = TestBed.createComponent(Contact);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+      }));
+      it("should create", () => {
+        expect(component).toBeTruthy();
+      });
+    });
+  }
+});
+export default require_contact_spec();
+//# sourceMappingURL=spec-contact.spec.js.map

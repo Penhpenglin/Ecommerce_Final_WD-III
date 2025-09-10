@@ -1,0 +1,53 @@
+import {
+  Component,
+  __decorate,
+  init_core,
+  init_tslib_es6
+} from "./chunk-MMRMA2V2.js";
+import {
+  __esm
+} from "./chunk-TTULUY32.js";
+
+// angular:jit:template:src\app\brand-image\brand-image.html
+var brand_image_default;
+var init_brand_image = __esm({
+  "angular:jit:template:src\\app\\brand-image\\brand-image.html"() {
+    brand_image_default = '<div class="container card-container mb-0">\r\n        <!-- Brand Logos -->\r\n        <div class="row g-2 mb-2 justify-content-center">\r\n             <div class="brand-logo-container">\r\n        <img src="/image/adidas.jpg" alt="Adidas">\r\n        <img src="/image/boss.jpg" alt="Boss">\r\n        <img src="/image/Burberry-Logo-2018-present.jpg" alt="Burberry">\r\n        <img src="/image/gucci.jpg" alt="Gucci">\r\n        <img src="/image/tommy.jpg" alt="Tommy">\r\n    </div>\r\n        </div>\r\n\r\n        <div class="row g-4 justify-content-center">\r\n            <!-- Card 1 -->\r\n            <div class="col-md-4">\r\n                <div class="card fashion-card">\r\n                    <div class="image-wrapper">\r\n                        <img src="/image/3.jpg" class="card-img-top" alt="Lifestyle">\r\n                        <!-- <div class="overlay-text">LIFESTYLE</div> -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            \r\n            <!-- Card 2 -->\r\n            <div class="col-md-4">\r\n                <div class="card fashion-card">\r\n                    <div class="image-wrapper">\r\n                        <img src="image/1.jpg" class="card-img-top" alt="Sportlife">\r\n                        <!-- <div class="overlay-text">SPORTLIFE</div> -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\r\n            <!-- Card 3 -->\r\n            <div class="col-md-4">\r\n                <div class="card fashion-card">\r\n                    <div class="image-wrapper">\r\n                        <img src="/image/2.jpg" class="card-img-top" alt="Girl Styles">\r\n                        <!-- <div class="overlay-text">SMART CASUAL</div> -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n';
+  }
+});
+
+// angular:jit:style:src\app\brand-image\brand-image.css
+var brand_image_default2;
+var init_brand_image2 = __esm({
+  "angular:jit:style:src\\app\\brand-image\\brand-image.css"() {
+    brand_image_default2 = "/* src/app/brand-image/brand-image.css */\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #f8f9fa;\n}\n.card-container {\n  padding: 4rem 0;\n}\n.fashion-card {\n  border: none;\n  border-radius: 0.5rem;\n  overflow: hidden;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n.brand-logo-img {\n  max-height: 25px;\n  object-fit: contain;\n}\n.image-wrapper {\n  position: relative;\n  width: 100%;\n  height: 400px;\n}\n.image-wrapper img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n.overlay-text {\n  position: absolute;\n  bottom: 1rem;\n  left: 1rem;\n  color: white;\n  font-size: 1.25rem;\n  font-weight: bold;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  background: rgba(0, 0, 0, 0.5);\n  padding: 0.5rem 1rem;\n  border-radius: 0.25rem;\n}\n.brand-logo-section {\n  padding: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 50px;\n}\n.brand-logo-container {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  flex-wrap: wrap;\n  background-color: #f8f9fa;\n}\n.brand-logo-container img {\n  max-height: 150px;\n  filter: grayscale(100%);\n  transition: filter 0.3s ease-in-out, box-shadow 0.02s ease-in-out;\n}\n.brand-logo-container img:hover {\n  filter: grayscale(0%);\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);\n}\n/*# sourceMappingURL=brand-image.css.map */\n";
+  }
+});
+
+// src/app/brand-image/brand-image.ts
+var BrandImage;
+var init_brand_image3 = __esm({
+  "src/app/brand-image/brand-image.ts"() {
+    "use strict";
+    init_tslib_es6();
+    init_brand_image();
+    init_brand_image2();
+    init_core();
+    BrandImage = class BrandImage2 {
+    };
+    BrandImage = __decorate([
+      Component({
+        selector: "app-brand-image",
+        imports: [],
+        template: brand_image_default,
+        styles: [brand_image_default2]
+      })
+    ], BrandImage);
+  }
+});
+
+export {
+  BrandImage,
+  init_brand_image3 as init_brand_image
+};
+//# sourceMappingURL=chunk-O3GSHT6P.js.map
