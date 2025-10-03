@@ -1,44 +1,45 @@
 <!-- <app-navbar></app-navbar> -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" 
-style="margin-top: 0;
-" 
->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container-fluid">
-    <a 
-    style="margin-left: 300px;"
-    class="navbar-brand" href="#">Pedro</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand fw-bold" routerLink="/">MyShop</a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+    <!-- Navbar items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Centered Search -->
+      <form class="d-flex mx-auto w-50">
+        <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+
+      <!-- Right side menu -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" routerLink="/">Home </a>
+          <a class="nav-link text-white" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" routerLink="/product-page">Product</a>
+          <a class="nav-link text-white" routerLink="/product-page">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="/contact">Contact</a>
+          <a class="nav-link text-white" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/cart" class="btn btn-success ms-3">
+            🛒 Cart ({{ cartService.getCartItem().length }})
+          </a>
         </li>
       </ul>
-      <div 
-      style="margin-right: 300px;"
-      class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <a 
-        style=" border: none;"
-        routerLink="/cart"
-        class="btn btn-outline-success">
-        Cart ({{ cartService.getCartItem().length}})
-      </a>
-
-      </div>
     </div>
   </div>
 </nav>
+
 
 
 

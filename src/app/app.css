@@ -17,7 +17,7 @@
 /* Brand hover effect */
 .navbar-brand {
   transition: color 0.3s ease, transform 0.3s ease;
-  color:rgb(0, 162, 255)efd;
+  color:rgb(88, 221, 159)efd;
 }
 
 .navbar-brand:hover {

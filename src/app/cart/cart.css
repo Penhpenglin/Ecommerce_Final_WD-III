@@ -1,218 +1,140 @@
-/* === Global Page Styles === */
-
-body {
-    background-color: #f7f9fc;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+/* === Cart Card Wrapper === */
+.cart-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
-
-
-/* === Cart Container === */
-
-.container h2 {
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #222;
-}
-
 
 /* === Empty Cart === */
-
-.container .text-center h4 {
-    font-size: 1.2rem;
-    color: #999 !important;
+.empty-cart h4 {
+  color: #888;
+  font-weight: 600;
 }
-
-.container .text-center a {
-    font-weight: 600;
-    transition: color 0.3s ease;
+.continue-link {
+  color: #2575fc;
+  font-weight: 600;
+  text-decoration: none;
 }
-
-.container .text-center a:hover {
-    color: #0056b3;
+.continue-link:hover {
+  text-decoration: underline;
 }
-
 
 /* === Cart Item === */
-
-.cart-item {
-    background: #fff;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    padding: 1rem;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+.cart-item-alt {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  gap: 15px;
 }
 
-.cart-item:hover {
-    background-color: #fdfdfd;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-    transform: translateY(-3px);
+.cart-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-
-/* Checkbox */
-
-.ckeck-box input {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.cart-info {
+  flex-grow: 1;
+}
+.cart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #222;
 }
 
-
-/* Product Image */
-
-.product-img {
-    border-radius: 10px;
-    border: 1px solid #e0e0e0;
-    transition: transform 0.3s ease;
+/* === Checkbox === */
+.select-check {
+  transform: scale(1.2);
+  accent-color: #2575fc;
 }
 
-.cart-item:hover .product-img {
-    transform: scale(1.05);
+/* === Price === */
+.cart-price {
+  font-weight: 600;
+  color: #2575fc;
+  min-width: 80px;
+  text-align: right;
 }
 
-
-/* Product Title */
-
-.cart-item h6 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    transition: color 0.3s ease;
+/* === Quantity Controls === */
+.cart-qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.qty-btn {
+  background: #f1f5f9;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.qty-btn:hover {
+  background: #2575fc;
+  color: #fff;
+}
+.qty-value {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-.cart-item h6:hover {
-    color: #0d6efd;
+/* === Total === */
+.cart-total {
+  font-weight: 700;
+  color: #2ecc71;
+  min-width: 100px;
+  text-align: right;
 }
 
-.cart-item small {
-    color: #6c757d;
+/* === Remove Button === */
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.remove-btn:hover {
+  transform: scale(1.2);
 }
 
-
-/* Price */
-
-.cart-item .fw-semibold {
-    font-size: 1.05rem;
-    color: #444;
+/* === Summary Card === */
+.cart-summary-alt {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-
-/* === Quantity Section === */
-
-.cart-item .me-4 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.total-price {
+  background: #2575fc;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-weight: 700;
 }
 
-.cart-item strong {
-    background: #f1f3f5;
-    padding: 5px 15px;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: 600;
+.checkout-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
 }
-
-
-/* Fix input buttons look */
-
-.cart-item input.form-control {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: #e9ecef;
-    border: none;
-    text-align: center;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.cart-item input.form-control:hover {
-    background: #0d6efd;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-
-/* Total */
-
-.cart-item .fw-bold {
-    font-size: 1.1rem;
-    color: #ff5722;
-}
-
-
-/* Remove button */
-
-.cart-item .btn-link {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #6c757d;
-    transition: color 0.25s ease, text-decoration 0.25s ease;
-}
-
-.cart-item .btn-link:hover {
-    color: #dc3545;
-    text-decoration: underline;
-}
-
-
-/* === Cart Summary Box === */
-
-.cart-summary {
-    background: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    animation: fadeIn 0.8s ease-out;
-}
-
-.cart-summary h5 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #f1f3f5;
-    padding-bottom: 8px;
-}
-
-.cart-summary p span:last-child {
-    background: #44caff;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-weight: 700;
-}
-
-
-/* Checkout Button */
-
-.cart-summary .btn-success {
-    background: linear-gradient(135deg, #28a745, #20c997);
-    border: none;
-    font-weight: 600;
-    padding: 12px 20px;
-    border-radius: 8px;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.cart-summary .btn-success:hover {
-    background: linear-gradient(135deg, #218838, #17a589);
-    transform: translateY(-2px);
-}
-
-
-/* === Fade-in Animation === */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.checkout-btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }

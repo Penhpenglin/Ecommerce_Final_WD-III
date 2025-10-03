@@ -44,7 +44,7 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(127, 210, 255, 0.3);
+  background: rgba(0, 4, 255, 0.3);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -71,7 +71,7 @@
 
 /* Input focus glow */
 .form-control:focus {
-  border-color: rgb(127, 210, 255);
-  box-shadow: 0 0 8px rgba(127, 210, 255, 0.6);
+  border-color: rgb(48, 5, 240);
+  box-shadow: 0 0 8px  rgb(100, 74, 218);
   transition: 0.3s;
 }
